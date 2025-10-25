@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  background: #fffaf8;
+  color: #333;
+}
+.hero {
+  background: linear-gradient(180deg, #ffe8ec, #fff);
+  padding: 100px 20px;
+}
+h1 {
+  font-size: 3em;
+  color: #d14d72;
+}
+.details iframe {
+  width: 90%;
+  height: 300px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+form {
+  display: inline-block;
+  margin-top: 20px;
+}
+input, select, button {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+button {
+  background: #d14d72;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #c03c63;
+}
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #ffe8ec;
+}
