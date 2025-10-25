@@ -1,48 +1,93 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+* {
   margin: 0;
-  background: #fffaf8;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fefefe;
   color: #333;
 }
+
 .hero {
-  background: linear-gradient(180deg, #ffe8ec, #fff);
-  padding: 100px 20px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('foto-kalian.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-h1 {
-  font-size: 3em;
-  color: #d14d72;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
 }
-.details iframe {
-  width: 90%;
-  height: 300px;
-  border: none;
-  margin-top: 10px;
-  border-radius: 10px;
-}
-form {
-  display: inline-block;
-  margin-top: 20px;
-}
-input, select, button {
-  display: block;
-  width: 250px;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
-button {
-  background: #d14d72;
+
+.content {
+  position: relative;
   color: white;
-  border: none;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.content h1 {
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+.content h2 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.details {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.details h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+  color: #c2185b;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+button {
+  background: #c2185b;
+  color: white;
   cursor: pointer;
+  border: none;
+  transition: 0.3s;
 }
+
 button:hover {
-  background: #c03c63;
+  background: #a3154f;
 }
+
 footer {
-  margin-top: 40px;
-  padding: 20px;
-  background: #ffe8ec;
+  background: #fde7f2;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  font-size: 0.9em;
 }
